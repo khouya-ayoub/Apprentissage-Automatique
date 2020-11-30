@@ -155,3 +155,20 @@ resultats[1:3, 3:4]
 resultats[1:3, ]
 resultats["poids"]
 
+
+# Day.csv
+dataBikes <- read.csv("day.csv", header = TRUE)
+dataBikes
+head(dataBikes)
+summary(dataBikes)
+
+# Graphics
+curve(sin(x), -3, 10)
+x <- rnorm(18)
+y <- rnorm(18)
+plot(x, y, xlab = "", ylab = "",
+     xlim = c(-2, 2), ylim = c(-2, 2),
+     pch = 22, col = "red", bg = "yellow",
+     tcl = 0.4, main = "Nuage de points")
+
+grid(lwd = 1)
