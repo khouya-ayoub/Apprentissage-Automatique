@@ -31,6 +31,5 @@ afficherCluster(data.multishapes, data.dbscan, "ligne X", "Ligne Y")
 # si on change epsilone plus petit on obtient plusieurs clusters
 # sinon pour le minPts on si on diminue la valuer on obtient des plus de clusters
 
-l <- kNNdist(data.multishapes, k = 8)
+kNNdist(data.multishapes, k = 8)
 kNNdistplot(data.multishapes, k = 8)
-
