@@ -31,5 +31,8 @@ afficherCluster(data.multishapes, data.dbscan, "ligne X", "Ligne Y")
 # si on change epsilone plus petit on obtient plusieurs clusters
 # sinon pour le minPts on si on diminue la valuer on obtient des plus de clusters
 
-kNNdist(data.multishapes, k = 8)
-kNNdistplot(data.multishapes, k = 8)
+# trouver le meilleur epsilon
+# corresponde à la valuer de y de coude de la courbe
+# k le minPts utilisé dans dbscan
+kNNdist(data.multishapes, k = 5)
+kNNdistplot(data.multishapes, k = 5)
