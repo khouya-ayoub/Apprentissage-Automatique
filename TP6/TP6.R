@@ -29,9 +29,9 @@ head(iris.norm)
 iris.3means <- kmeans(iris.norm[, 1:4], 3)
 iris.3means$cluster
 iris.3means$centers
-iris.3means$withinss
-iris.3means$tot.withinss
-iris.3means$betweenss
+iris.3means$withinss # homogénité
+iris.3means$tot.withinss # totale
+iris.3means$betweenss # entre les classes
 iris.3means$size
 
 plot(iris.norm$PetalLength, iris.norm$PetalWidth)

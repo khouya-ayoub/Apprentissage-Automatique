@@ -114,7 +114,7 @@ arbre.cars <- rpart(Type ~ Price + Country + Reliability + Mileage + Weight + Di
 plot(arbre.cars)
 text(arbre.cars)
 
-# Grand arbre complexe pas bien lisible
+# Grand arbre complexe pas bien lisible cp represente la complixité
 tree.cars.pruned <- prune(arbre.cars, cp = 0.3)
 tree.cars.pruned
 
